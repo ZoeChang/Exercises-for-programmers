@@ -1,0 +1,14 @@
+<div> What's your name? </div>
+<input value="Your name"  type="text" id="test"></input>
+<button onclick="Greeting()">Submit</button>
+<p id="who"></p>
+
+
+<script>
+function Greeting() {
+	var x = document.getElementById("test").value;
+	var s = `Hello ${x} !!`; //ES6
+        document.getElementById("who").innerHTML = s;
+	document.getElementById("who1").innerHTML = "Hello," + document.getElementById("test").value; // challenge 1
+}
+</script>

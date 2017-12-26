@@ -1,0 +1,15 @@
+<p>What is the input string?</p>
+<input type="text" id="str"  onkeyup="counting()"></input>
+<button onclick="counting()">Count</button>
+<p id="ans"></p>
+
+<script>
+function counting(){
+  var strr = document.getElementById("str").value;
+  if (strr.length == 0 ){
+    document.getElementById("ans").innerHTML = "You must enter something.";
+  } else { 
+    document.getElementById("ans").innerHTML = `${strr} has ${strr.length} character(s)`;
+  }
+}
+</script>
